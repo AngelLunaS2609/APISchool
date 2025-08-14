@@ -6,11 +6,11 @@ namespace APISchool.DTOs
     {
         public int Id { get; set; }
         [Display(Name = "Profesor")]
-        public int IdTeacher { get; set; }
+        public int TeacherId { get; set; }
         [Display(Name = "Profesor")]
         public int? Teacher { get; set; }
         [Display(Name = "Estudiante")]
-        public int IdStudent { get; set; }
+        public int StudentId { get; set; }
         [Display(Name = "Estudiante")]
         public int? Student { get; set; }
     }

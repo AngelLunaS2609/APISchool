@@ -12,6 +12,6 @@ namespace APISchool.Models
 
         //Propiedades de navegacion
         public MusicSchool School { get; set; }
-        public Students Students { get; set; }
+        public Students Student { get; set; }
     }
 }

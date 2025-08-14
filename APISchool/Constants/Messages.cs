@@ -13,6 +13,8 @@
             public const string SchoolNotFound = "Estudiante no encontrado";
             public const string RegistrationNotFoundWithId = "Inscripcion con ID {0} no encontrado";
             public const string RegistrationNotFound = "Inscripcion no encontrado";
+            public const string TsNotFoundWithId = "Asignacion con ID {0} no encontrado";
+            public const string TsNotFound = "Asignacion no encontrado";
 
         }
         public static class Success

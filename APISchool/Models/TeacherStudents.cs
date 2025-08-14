@@ -11,7 +11,7 @@ namespace APISchool.Models
         public int StudentId { get; set; }
 
         //Propiedades de navegacion
-        public Students Students { get; set; }
-        public Teachers Teachers { get; set; }
+        public Teachers Teacher { get; set; }
+        public Students Student { get; set; }
     }
 }
