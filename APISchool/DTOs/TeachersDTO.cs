@@ -13,7 +13,7 @@ namespace APISchool.DTOs
         [Display(Name = "Matricula")]
         public string UniqueCode { get; set; }
         [Display(Name = "Escuela")]
-        public int IdMusicSchool { get; set; }
+        public int MusicSchoolId { get; set; }
         [Display(Name = "Escuela")]
         public string? MusicSchool { get; set; }
     }

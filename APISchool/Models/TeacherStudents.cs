@@ -6,9 +6,9 @@ namespace APISchool.Models
     {
         public int Id { get; set; }
         [Required]
-        public int IdTeacher { get; set; }
+        public int TeacherId { get; set; }
         [Required]
-        public int IdStudent { get; set; }
+        public int StudentId { get; set; }
 
         //Propiedades de navegacion
         public Students Students { get; set; }

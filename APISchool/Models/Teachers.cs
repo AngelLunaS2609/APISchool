@@ -12,7 +12,7 @@ namespace APISchool.Models
         [Required]
         public string UniqueCode { get; set; }
         [Required]
-        public int IdMusicSchool { get; set; }
+        public int MusicSchoolid { get; set; }
 
         //Propiedad de navegacion
         public MusicSchool MusicSchool { get; set; }

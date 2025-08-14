@@ -24,7 +24,7 @@ namespace APISchool.Services
                 Name = t.Name,
                 LastName = t.LastName,
                 UniqueCode = t.UniqueCode,
-                IdMusicSchool = t.IdMusicSchool
+                MusicSchoolId = t.MusicSchoolid
             }).ToListAsync();
             return teachers;
         }
@@ -37,7 +37,7 @@ namespace APISchool.Services
                 Name = t.Name,
                 LastName = t.LastName,
                 UniqueCode = t.UniqueCode,
-                IdMusicSchool = t.IdMusicSchool
+                MusicSchoolId = t.MusicSchoolid
             }).FirstOrDefaultAsync();
 
             if (teacher == null)
@@ -52,7 +52,7 @@ namespace APISchool.Services
                 Name = teachersCreateDTO.Name,
                 LastName = teachersCreateDTO.LastName,
                 UniqueCode = teachersCreateDTO.UniqueCode,
-                IdMusicSchool = teachersCreateDTO.IdMusicSchool
+                MusicSchoolid = teachersCreateDTO.MusicSchoolId
             };
             await _context.Teachers.AddAsync(teacher);
             await _context.SaveChangesAsync();
@@ -66,7 +66,7 @@ namespace APISchool.Services
             teacher.Name = teachersCreateDTO.Name;
             teacher.LastName = teachersCreateDTO.LastName;
             teacher.UniqueCode = teachersCreateDTO.UniqueCode;
-            teacher.IdMusicSchool = teachersCreateDTO.IdMusicSchool;
+            teacher.MusicSchoolid = teachersCreateDTO.MusicSchoolId;
 
             _context.Teachers.Update(teacher);
             await _context.SaveChangesAsync();

@@ -20,6 +20,6 @@ namespace APISchool.DTOs
 
         [Display(Name = "Escuela")]
         [Required(ErrorMessage = "La escuela es requerida")]
-        public int IdMusicSchool { get; set; }
+        public int MusicSchoolId { get; set; }
     }
 }
