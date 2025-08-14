@@ -46,7 +46,7 @@ namespace APISchool.Controllers
             }
         }
 
-        [HttpPut("{id}")]
+        [HttpPut]
         public async Task<IActionResult> Edit([FromBody] TeachersCreateDTO teachersCreateDTO)
         {
             try
