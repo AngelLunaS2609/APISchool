@@ -19,6 +19,7 @@ builder.Services.AddScoped<IStudentService, StudentService>();
 builder.Services.AddScoped<IMusicSchoolService, MusicSchoolService>();
 builder.Services.AddScoped<ITeacherStudentsService, TeacherStudentsService>();
 builder.Services.AddScoped<IRegistrationService, RegistrationService>();
+builder.Services.AddScoped<IConsultService, ConsultService>();
 
 var app = builder.Build();
 
