@@ -1,4 +1,5 @@
 using APISchool.Data;
+using APISchool.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +13,8 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+//Configurar el servicio, dar de alta en program
+builder.Services.AddScoped<ITeacherService, TeacherService>();
 
 var app = builder.Build();
 
