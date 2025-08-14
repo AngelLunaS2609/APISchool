@@ -29,7 +29,7 @@ namespace APISchool.Controllers
             var student = await _studentService.GetByIdAsync(id);
             if (student == null)
             {
-                return NotFound(new { message = "No se encontro el profesor" });
+                return NotFound(new { message = "No se encontro el estudiante" });
             }
             return Ok(student);
         }
@@ -44,7 +44,7 @@ namespace APISchool.Controllers
             }
             catch (Exception e)
             {
-                return BadRequest(new { message = $"Hubo un error al crear el profesor: {e.Message}" });
+                return BadRequest(new { message = $"Hubo un error al crear el estudiante: {e.Message}" });
             }
         }
 
@@ -58,7 +58,7 @@ namespace APISchool.Controllers
             }
             catch (Exception e)
             {
-                return BadRequest(new { message = $"Hubo un error al actualizar el profesor: {e.Message}" });
+                return BadRequest(new { message = $"Hubo un error al actualizar el estudiante: {e.Message}" });
             }
         }
 
