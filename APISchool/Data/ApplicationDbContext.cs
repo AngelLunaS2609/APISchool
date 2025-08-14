@@ -10,6 +10,8 @@ namespace APISchool.Data
         public DbSet<Teachers> Teachers { get; set; }
         public DbSet<Students> Students { get; set; }
         public DbSet<TeacherStudents> TeacherStudents { get; set; }
+
+        public DbSet<Registration> Registration { get; set; }
         
     }
 }
