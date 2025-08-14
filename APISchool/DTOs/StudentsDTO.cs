@@ -1,20 +1,17 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace APISchool.Models
+namespace APISchool.DTOs
 {
-    public class Students
+    public class StudentsDTO
     {
         public int Id { get; set; }
-        [Required]
+        [Display(Name = "Nombre")]
         public string Name { get; set; }
-        [Required]
+        [Display(Name = "Apellido")]
         public string LastName { get; set; }
-        [Required]
+        [Display(Name = "Fecha de nacimiento")]
         public DateTime BirthDate { get; set; }
-        [Required]
+        [Display(Name = "Matricula")]
         public string UniqueCode { get; set; }
-
-        // Propedades de navegación
-        public IEnumerable<TeacherStudents> TeacherStudents { get; set; }
     }
 }
