@@ -68,3 +68,6 @@ Ingles
 ## Versionado 📌
 ### GIT
 Sistema de control de vesriones para mantener control de actualizaciones posteriores
+### Ramas
+Se utiliza Developer para el desarrollo y testeo
+Se utiliza Master como rama final y proyecto completo
