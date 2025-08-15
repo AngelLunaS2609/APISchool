@@ -51,6 +51,8 @@ Si no deseas hacerlo por comando en la carpeta DataBase del proyecto se encuentr
 ### Clone el proyecto y ejecuta la solucion 🔩
 
 Ejucutar el archivo (solucion) en raiz con extencion de Visual Studio
+Comenzara la ejecucion en SWAGER donde se puede consumir todas las peticiones
+Si deseas pudes utilizar PostMand para consumir las APIs
 
 ## Construido con 🛠️
 
