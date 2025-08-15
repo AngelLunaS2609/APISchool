@@ -36,6 +36,16 @@ Por tu propio host local u online:
 
 ```
 
+### Creacion de base de datos
+Abrir el proyecto con Visual Studio Comunity y ejecutar mediante linea de comandos nugget
+```
+"Update-database"
+```
+A continuacion se generaran automaticamente las tablas de la base de datos
+
+### Restauracion de base de datos
+Si no deseas hacerlo por comando en la carpeta DataBase del proyecto se encuentra un script con la base de datos y registros de prueba.
+
 ## Ejecucion ⚙️
 
 ### Clone el proyecto y ejecuta la solucion 🔩
